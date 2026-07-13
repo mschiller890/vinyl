@@ -1,10 +1,12 @@
 package com.mschiller890.vinyl.client;
 
+import com.mschiller890.vinyl.client.hud.VinylHud;
 import net.fabricmc.api.ClientModInitializer;
 
 public class VinylClient implements ClientModInitializer {
-	@Override
-	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
-	}
+
+    @Override
+    public void onInitializeClient() {
+        VinylHud.initialize();
+    }
 }
