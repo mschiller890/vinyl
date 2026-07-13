@@ -3,13 +3,14 @@
 	"id": "vinyl",
 	"version": "${version}",
 	"name": "vinyl",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Control your music from Minecraft",
 	"authors": [
-		"Me!"
+		"mschiller890"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/mschiller890/vinyl",
+		"sources": "https://github.com/mschiller890/vinyl",
+		"issues": "https://github.com/mschiller890/vinyl/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vinyl/icon.png",
