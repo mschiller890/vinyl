@@ -32,7 +32,16 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-}
+	// JNA (Java Native Access) - provides access to native Windows APIs from Java.
+	// Used to call the Windows Global System Media Transport Controls (GSMTC) COM API
+	// and to send media key events as a fallback when transport controls are unavailable.
+	// jna-platform adds the com.sun.jna.platform packages (Win32 helpers, user32, etc.).
+	// Both are bundled into the mod jar via the "include" configuration so they ship
+	// inside the mod without requiring the user to install anything extra.
+	implementation "net.java.dev.jna:jna:${project.jna_version}"
+	implementation "net.java.dev.jna:jna-platform:${project.jna_version}"
+	include "net.java.dev.jna:jna:${project.jna_version}"
+	include "net.java.dev.jna:jna-platform:${project.jna_version}"}
 
 processResources {
 	def version = project.version

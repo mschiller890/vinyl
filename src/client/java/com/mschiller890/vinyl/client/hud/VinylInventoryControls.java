@@ -10,6 +10,7 @@ import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.input.MouseButtonInfo;
+import com.mschiller890.vinyl.client.media.MusicController;
 import net.minecraft.network.chat.Component;
 
 import java.util.ArrayList;
@@ -119,7 +120,7 @@ public final class VinylInventoryControls {
         boolean isLeftPressed = client.mouseHandler.isLeftPressed();
         boolean clickEdge = isLeftPressed && !wasLeftPressed;
         wasLeftPressed = isLeftPressed;
-
+// hi there
         if (!clickEdge) {
             return;
         }
@@ -148,14 +149,14 @@ public final class VinylInventoryControls {
     }
 
     private static void onPrevious() {
-        System.out.println("[Vinyl] Previous pressed");
+        MusicController.getInstance().previous();
     }
 
     private static void onPlayPause() {
-        System.out.println("[Vinyl] Play/Pause pressed");
+        MusicController.getInstance().playPause();
     }
 
     private static void onNext() {
-        System.out.println("[Vinyl] Next pressed");
+        MusicController.getInstance().next();
     }
 }
