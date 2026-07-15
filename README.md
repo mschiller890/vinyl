@@ -9,6 +9,8 @@ inventory screen. It reads live metadata from whatever app is producing sound
 (Spotify, YouTube Music, Chrome, Edge, the Windows Media Player… anything the
 OS knows about) and lets you control it without alt-tabbing away.
 
+<img width="282" height="145" alt="image" src="https://github.com/user-attachments/assets/ef78bbc6-114f-44af-b615-5c5416820b88" />
+
 ## Features
 
 - **Now-playing HUD** — a compact, scaled text overlay in the top-left of the
@@ -83,6 +85,13 @@ cd vinyl
 ```
 
 The built jar will be in `build/libs/`.
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ae7dafe4-54f3-41f8-8f7a-5f1b124d01d6" width="49%" alt="Screenshot 1">
+  <img src="https://github.com/user-attachments/assets/d9b14bf4-166f-4fd5-9fa6-4c34f6ccd287" width="49%" alt="Screenshot 2">
+</p>
 
 ## Compatibility
 
